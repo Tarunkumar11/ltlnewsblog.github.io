@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1em 0 1em;
+}
+.header{
+    background: #363667;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    padding-bottom: 1em;
+    color: white;
+    padding: 1em 0em 1em 0em;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    color: black;
+    border: 4px solid red;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.header-content h1, p{
+    margin: 0.3em;
+}
+
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0.5em;
+}
+.filter{
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap
+
+}
+
+.select-opt{
+    display: flex;
+    flex-direction: column;
+}
+
+.select-opt label{
+    margin-bottom: 0.4em;
+    font-size: 15px;
+    font-weight: 600;
+}
+.select-opt select{
+    height: 2em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    width: 200px;
+}
+.search-bar label{
+    margin-bottom: 0.4em;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* .email-add{
+    width: 218px;
+} */
+.email-add input{
+    height: 2em;
+    border-radius: 0.3em;
+    border: 2px solid black;
+    outline: none;
+}
+.email-add button{
+    background: aquamarine;
+    padding: 0.51em;
+    margin-left: -8px;
+    width: 90px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 1s ease-out;
+
+}
+.email-add button:hover{
+    background: rgb(7, 233, 157) ;
+}
+.line{
+    background: black;
+    height: 2px;
+    margin-bottom: 2em;
+    width: 100%;
+}
+.news-blog{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+}
+.news-blog .card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background: #e2e2e2;
+    border-radius: 1em;
+    /* flex-wrap: wrap ; */
+    width: 100%;
+    margin-top: 2em;
+    transition: all 0.5s ease-out;
+}
+
+.news-blog .card:hover{
+    box-shadow: 0px 0px 9px 3px;
+}
+.card  img{
+    height: 160px;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+.news-blog .card .card-info{
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    width: 75%;
+    padding: 0.5em;
+}
+
+.news-blog .card .card-info h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+.news-blog .card .card-info .date-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 0.5em;
+}
+.news-blog .card .card-info .date-info span{
+    opacity: 0.7;
+}
+
+.news-blog .card .card-info .content{
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.news-blog .card .card-info .btn{
+    padding: 0.8em;
+    width: fit-content;
+    background: rgb(19, 19, 19);
+    outline: none;
+    margin-top: 0.4em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    color: white;
+    font-size: 15px;
+    margin-top: 2em;
+    font-weight: 450;
+    border: 2px solid black;
+}
+
+.news-blog .card .card-info .btn:hover{
+    background: rgb(94, 92, 92)
+}
+
+.news-blog .card .card-info button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer{
+    margin-top: 2em;
+    height: 3em;
+    background: blue;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .select-opt select {
+        width: 267px;
+    }
+
+    .card img {
+        width: 90%;
+    }
+    .news-blog .card {
+        flex-direction: column;
+    }
+    .filter{
+        justify-content: center;
+    }
+
+    .select-opt select{
+        width: 267px
+    }
+    .news-blog .card{
+
+        justify-content: center;
+    }
+
+    .news-blog .card .card-info{
+        width: 80%;
+    }
+    
+      
+    .news-blog .card{
+
+        justify-content: center;
+    }
+
+}
+
+ 
